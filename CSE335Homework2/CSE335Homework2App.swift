@@ -11,7 +11,7 @@ import SwiftUI
 struct CSE335Homework2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(dataController: coreDataController())
         }
     }
 }

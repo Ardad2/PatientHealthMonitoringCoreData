@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var dataController: coreDataController = coreDataController()
+
+
     var body: some View {
         NavigationView{
             VStack(spacing:100) {
@@ -45,7 +49,7 @@ struct ContentView: View {
                 Text("Personal Health Monitoring System").foregroundColor(Color.blue);
                 
                 NavigationLink(
-                    destination: ContentView(),
+                    destination: enterData(dataController: dataController),
                     label: {
                         Text("Enter Data")
                     }).buttonStyle(.borderedProminent)
@@ -63,9 +67,17 @@ struct ContentView: View {
                     .navigationBarHidden(true)
                 
                 NavigationLink(
-                    destination: ContentView(),
+                    destination: enterDataTest(dataController: dataController),
                     label: {
-                        Text("(USE THIS FOR TESTING DATA)")
+                        Text("(TEST: ENTER DATA)")
+                    }).buttonStyle(.borderedProminent)
+                    .navigationTitle("Home")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .navigationBarHidden(true)
+                NavigationLink(
+                    destination: enterDataTest(dataController: dataController),
+                    label: {
+                        Text("(TESTING: DELETE DATA)")
                     }).buttonStyle(.borderedProminent)
                     .navigationTitle("Home")
                     .navigationBarTitleDisplayMode(.inline)
