@@ -14,6 +14,8 @@
 		82D9D5EA29EF57D400348140 /* CSE335Homework2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9D5E929EF57D400348140 /* CSE335Homework2Tests.swift */; };
 		82D9D5F429EF57D400348140 /* CSE335Homework2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9D5F329EF57D400348140 /* CSE335Homework2UITests.swift */; };
 		82D9D5F629EF57D400348140 /* CSE335Homework2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9D5F529EF57D400348140 /* CSE335Homework2UITestsLaunchTests.swift */; };
+		82D9D60629EF5AE800348140 /* tableData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82D9D60329EF5AE700348140 /* tableData.xcdatamodeld */; };
+		82D9D60729EF5AE800348140 /* coreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9D60529EF5AE700348140 /* coreDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		82D9D5EF29EF57D400348140 /* CSE335Homework2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSE335Homework2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D9D5F329EF57D400348140 /* CSE335Homework2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSE335Homework2UITests.swift; sourceTree = "<group>"; };
 		82D9D5F529EF57D400348140 /* CSE335Homework2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSE335Homework2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82D9D60429EF5AE700348140 /* tableData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tableData.xcdatamodel; sourceTree = "<group>"; };
+		82D9D60529EF5AE700348140 /* coreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = coreDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		82D9D5D729EF57D300348140 /* CSE335Homework2 */ = {
 			isa = PBXGroup;
 			children = (
+				82D9D60229EF5AD000348140 /* CoreData */,
 				82D9D5D829EF57D300348140 /* CSE335Homework2App.swift */,
 				82D9D5DA29EF57D300348140 /* ContentView.swift */,
 				82D9D5DC29EF57D400348140 /* Assets.xcassets */,
@@ -125,6 +130,15 @@
 				82D9D5F529EF57D400348140 /* CSE335Homework2UITestsLaunchTests.swift */,
 			);
 			path = CSE335Homework2UITests;
+			sourceTree = "<group>";
+		};
+		82D9D60229EF5AD000348140 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				82D9D60529EF5AE700348140 /* coreDataController.swift */,
+				82D9D60329EF5AE700348140 /* tableData.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				82D9D5DB29EF57D300348140 /* ContentView.swift in Sources */,
+				82D9D60629EF5AE800348140 /* tableData.xcdatamodeld in Sources */,
+				82D9D60729EF5AE800348140 /* coreDataController.swift in Sources */,
 				82D9D5D929EF57D300348140 /* CSE335Homework2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +593,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82D9D60329EF5AE700348140 /* tableData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82D9D60429EF5AE700348140 /* tableData.xcdatamodel */,
+			);
+			currentVersion = 82D9D60429EF5AE700348140 /* tableData.xcdatamodel */;
+			path = tableData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 82D9D5CD29EF57D300348140 /* Project object */;
 }
