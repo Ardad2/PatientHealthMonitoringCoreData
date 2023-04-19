@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		822BB02729EF68FD00415981 /* viewMyHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822BB02629EF68FD00415981 /* viewMyHealth.swift */; };
 		8281501629EF615600E6532F /* enterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281501529EF615600E6532F /* enterData.swift */; };
 		8281501829EF623900E6532F /* enterDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281501729EF623900E6532F /* enterDataTest.swift */; };
-		8281501A29EF67B000E6532F /* viewMyHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281501929EF67B000E6532F /* viewMyHealth.swift */; };
 		82D9D5D929EF57D300348140 /* CSE335Homework2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9D5D829EF57D300348140 /* CSE335Homework2App.swift */; };
 		82D9D5DB29EF57D300348140 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9D5DA29EF57D300348140 /* ContentView.swift */; };
 		82D9D5DD29EF57D400348140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D9D5DC29EF57D400348140 /* Assets.xcassets */; };
@@ -39,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		822BB02629EF68FD00415981 /* viewMyHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewMyHealth.swift; sourceTree = "<group>"; };
 		8281501529EF615600E6532F /* enterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enterData.swift; sourceTree = "<group>"; };
 		8281501729EF623900E6532F /* enterDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enterDataTest.swift; sourceTree = "<group>"; };
-		8281501929EF67B000E6532F /* viewMyHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewMyHealth.swift; sourceTree = "<group>"; };
 		82D9D5D529EF57D300348140 /* CSE335Homework2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSE335Homework2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D9D5D829EF57D300348140 /* CSE335Homework2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSE335Homework2App.swift; sourceTree = "<group>"; };
 		82D9D5DA29EF57D300348140 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 				82D9D5DA29EF57D300348140 /* ContentView.swift */,
 				8281501529EF615600E6532F /* enterData.swift */,
 				8281501729EF623900E6532F /* enterDataTest.swift */,
-				8281501929EF67B000E6532F /* viewMyHealth.swift */,
+				822BB02629EF68FD00415981 /* viewMyHealth.swift */,
 				82D9D5DC29EF57D400348140 /* Assets.xcassets */,
 				82D9D5DE29EF57D400348140 /* Preview Content */,
 			);
@@ -282,7 +282,7 @@
 			files = (
 				8281501829EF623900E6532F /* enterDataTest.swift in Sources */,
 				82D9D5DB29EF57D300348140 /* ContentView.swift in Sources */,
-				8281501A29EF67B000E6532F /* viewMyHealth.swift in Sources */,
+				822BB02729EF68FD00415981 /* viewMyHealth.swift in Sources */,
 				82D9D60629EF5AE800348140 /* tableData.xcdatamodeld in Sources */,
 				82D9D60729EF5AE800348140 /* coreDataController.swift in Sources */,
 				8281501629EF615600E6532F /* enterData.swift in Sources */,

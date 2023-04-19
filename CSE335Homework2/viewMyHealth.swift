@@ -12,7 +12,7 @@ struct viewMyHealth: View {
     
     @State var dataController: coreDataController = coreDataController()
     @State var date1:Date = Calendar.current.date(byAdding: .hour, value: +1, to: Date())!
-    @State var date2:Date = Calendar.current.date(byAdding: .hour, value: +1, to: Date())!
+@State var date2:Date = Calendar.current.date(byAdding: .hour, value: +1, to: Date())!
 
 
 
@@ -24,6 +24,7 @@ struct viewMyHealth: View {
 
     var body: some View {
             VStack(spacing:100) {
+                
                 Text("View My Health")
                 
                 HStack() {
@@ -36,24 +37,26 @@ struct viewMyHealth: View {
                     
                 
             }
+                 
                 
                 List {
                     Section(header: ListHeader())
                     {
+                        
                         ForEach(dataController.getDays())
                         {
                             datum in VStack()
                             {
                                 HStack {
-                                    Text(datum.get_date_string());
-                                    Text(String(datum.get_bloodPressureSystolic()));
-                                         Text(String(datum.get_bloodPressureDiastolic()));
-                                    Text(String(datum.get_sugarLevel()));
-                                         Text(String(datum.get_weight()));
+                                    Text(String(datum.weight));
+
                                     Spacer();
                                 }
                             }
                         }
+                        
+                        
+                        
                     }
                 }
             
