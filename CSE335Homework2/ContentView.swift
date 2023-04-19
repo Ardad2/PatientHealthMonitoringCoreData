@@ -51,14 +51,23 @@ struct ContentView: View {
                 NavigationLink(
                     destination: enterData(dataController: dataController),
                     label: {
-                        Text("Enter Data")
+                        Text("Enter Data For Today")
                     }).buttonStyle(.borderedProminent)
                     .navigationTitle("Home")
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarHidden(true)
                 
                 NavigationLink(
-                    destination: ContentView(),
+                    destination: enterDataTest(dataController: dataController),
+                    label: {
+                        Text("Enter Data for Given Day")
+                    }).buttonStyle(.borderedProminent)
+                    .navigationTitle("Home")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .navigationBarHidden(true)
+                
+                NavigationLink(
+                    destination: viewMyHealth(dataController:dataController),
                     label: {
                         Text("View My Health")
                     }).buttonStyle(.borderedProminent)
@@ -66,18 +75,11 @@ struct ContentView: View {
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarHidden(true)
                 
+
                 NavigationLink(
                     destination: enterDataTest(dataController: dataController),
                     label: {
-                        Text("(TEST: ENTER DATA)")
-                    }).buttonStyle(.borderedProminent)
-                    .navigationTitle("Home")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .navigationBarHidden(true)
-                NavigationLink(
-                    destination: enterDataTest(dataController: dataController),
-                    label: {
-                        Text("(TESTING: DELETE DATA)")
+                        Text("(FOR TESTING: DELETE DATA)")
                     }).buttonStyle(.borderedProminent)
                     .navigationTitle("Home")
                     .navigationBarTitleDisplayMode(.inline)
